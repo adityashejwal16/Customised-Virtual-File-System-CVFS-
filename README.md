@@ -125,14 +125,16 @@ Memory Buffer
 
 ### Linux / macOS
 
-gcc cvfs.c -o cvfs
-./cvfs
+gcc cvfs.c -o myex.exe
+<br>
+./myexe
 
 
 ### Windows (MinGW)
 
-gcc cvfs.c -o cvfs.exe
-cvfs.exe
+gcc cvfs.c -o myexe
+<br>
+myexe.exe
 
 
 ---
@@ -174,6 +176,3 @@ Aditya Dipak Shejwal
 
 ---
 
-## 📄 License
-
-This project is developed for educational purposes.
