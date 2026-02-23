@@ -1,4 +1,4 @@
-# 🚀 Customised Virtual File System (CVFS)
+# 📁 Customised Virtual File System (CVFS)
 
 > 💻 A System Programming project in C language that simulates the internal working of an Operating System File System.
 
