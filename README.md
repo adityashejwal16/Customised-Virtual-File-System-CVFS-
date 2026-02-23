@@ -1,17 +1,13 @@
 📁 Customised Virtual File System (CVFS)
---
 📌 Overview
---
 
 Customised Virtual File System (CVFS) is a system-level project developed in C language that simulates the internal working of an Operating System’s file management system.
 
-The project creates a virtual environment where files can be created, accessed, modified, and deleted using internally designed data structures similar to real operating systems like Linux and Windows.
+The project creates a virtual environment where files can be created, accessed, modified, and deleted using internally designed data structures similar to real operating systems such as Linux and Windows.
 
-CVFS demonstrates core OS concepts such as Inodes, File Descriptors, File Tables, Memory Buffers, and Permission Management.
+CVFS demonstrates core OS concepts including Inodes, File Descriptors, File Tables, Memory Buffers, and Permission Management.
 
---
 🎯 Project Objectives
---
 
 Understand internal architecture of file systems
 
@@ -23,9 +19,7 @@ Learn low-level memory management in C
 
 Strengthen system programming fundamentals
 
---
 ⚙️ Features
---
 
 ✅ Virtual File Creation
 ✅ File Deletion (Unlink Operation)
@@ -36,9 +30,7 @@ Strengthen system programming fundamentals
 ✅ Command Driven Interactive Shell
 ✅ Memory Management Simulation
 
---
 🧠 Core Components
---
 🔹 Boot Block
 
 Stores boot information of the virtual file system.
@@ -86,28 +78,30 @@ Mode
 Represents process-level file descriptor table similar to an operating system.
 
 ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
 🖥️ Supported Commands
+Command	Arguments	Description
+creat	<filename> <permission>	Create a new file
+write	<fd>	Write data into file
+read	<fd> <size>	Read data from file
+ls	—	Display list of all files
+unlink	<filename>	Delete existing file
+man	<command>	Display manual page
+help	—	Show help menu
+clear	—	Clear terminal
+exit	—	Terminate CVFS
+
 ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
-Command	Description
-creat <filename> <permission>	Create new file
-write <fd>	Write data into file
-read <fd> <size>	Read data from file
-ls	List all files
-Unlink <filename>	Delete file
-man <command>	Display manual page
-help	Show help menu
-clear	Clear terminal
-exit	Terminate CVFS
-━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
 🔐 Permission Model
+Value	Permission Type	Description
+1	Read	File can only be read
+2	Write	File can only be written
+3	Read + Write	File supports both operations
+
 ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
-Value	Permission
-1	Read
-2	Write
-3	Read + Write
-━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
 🏗️ System Architecture
-━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
 User Commands
       ↓
 Command Interpreter (Shell)
@@ -119,18 +113,20 @@ File Table
 Inode
       ↓
 Memory Buffer (File Data)
+
 ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
 🚀 Compilation & Execution
-━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
 Linux / macOS
 gcc cvfs.c -o cvfs
 ./cvfs
 Windows (MinGW)
 gcc cvfs.c -o cvfs.exe
 cvfs.exe
+
 ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
 📚 Concepts Used
-━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
 
 Linked List Data Structure
 
@@ -145,10 +141,10 @@ Operating System Concepts
 System Programming in C
 
 ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
-💡 Learning Outcomes
-━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
 
-Understanding of internal file system working
+💡 Learning Outcomes
+
+Understanding internal file system working
 
 Role of inodes and file descriptors
 
@@ -159,14 +155,14 @@ File permission implementation
 Virtual file system abstraction
 
 ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
 👨‍💻 Author
-━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
 
 Aditya Dipak Shejwal
 
 ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
 🔮 Future Enhancements
-━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
 
 Close File Command
 
@@ -177,9 +173,3 @@ File Statistics (stat / fstat)
 Directory Structure Support
 
 Multi-process Simulation
-
-━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
-📄 License
-━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
-
-This project is developed for educational and learning purposes.
