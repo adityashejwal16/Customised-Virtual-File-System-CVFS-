@@ -95,18 +95,27 @@ Represents process-level file descriptor table.
 ---
 
 ## 🏗️ System Architecture
-
-
+<br>
 User Commands
+<br>
 ↓
+<br>
 Command Interpreter
+<br>
 ↓
+<br>
 UFDT
+<br>
 ↓
+<br>
 File Table
+<br>
 ↓
+<br>
 Inode
+<br>
 ↓
+<br>
 Memory Buffer
 
 
