@@ -9,9 +9,9 @@ The project creates a virtual environment where files can be created, accessed, 
 
 CVFS demonstrates core OS concepts such as Inodes, File Descriptors, File Tables, Memory Buffers, and Permission Management.
 
-━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+--
 🎯 Project Objectives
-━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+--
 
 Understand internal architecture of file systems
 
@@ -23,9 +23,9 @@ Learn low-level memory management in C
 
 Strengthen system programming fundamentals
 
-━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+--
 ⚙️ Features
-━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+--
 
 ✅ Virtual File Creation
 ✅ File Deletion (Unlink Operation)
@@ -36,9 +36,9 @@ Strengthen system programming fundamentals
 ✅ Command Driven Interactive Shell
 ✅ Memory Management Simulation
 
-━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+--
 🧠 Core Components
-━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+--
 🔹 Boot Block
 
 Stores boot information of the virtual file system.
