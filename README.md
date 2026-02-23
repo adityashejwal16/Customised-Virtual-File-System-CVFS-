@@ -1,7 +1,7 @@
 📁 Customised Virtual File System (CVFS)
-━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+--
 📌 Overview
-━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+--
 
 Customised Virtual File System (CVFS) is a system-level project developed in C language that simulates the internal working of an Operating System’s file management system.
 
